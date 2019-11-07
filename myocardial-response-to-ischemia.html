@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<!-- saved from url=(0084)https://www.sketchymedical.com/sections/c4467229-6f63-43e7-a984-43502ef29d49/hotspot -->
+<html lang="en"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<!-- <meta http-equiv="X-UA-Compatible" content="IE=7" />
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"f34a1877e4","applicationID":"9022742","transactionName":"IVwPQBRXDVtRRBkQBAFHCFsIS05fW0JFEw4W","queueTime":3,"applicationTime":109,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1026.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script> -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  Myocardial Response To Ischemia
+</title>
+<meta name="description" content="Unknown Meta Description">
+<meta name="keywords" content="Unknown Meta Keywords">
+<meta name="author" content="Unknown Meta Author">
+<meta property="og:title" content="Unknown Meta OG Title">
+<meta property="og:url" content="Unknown Meta OG URL">
+<meta property="og:image" content="Unknown Meta OG Cover">
+<meta property="og:description" content="Unknown Meta OG Description">
+
+<link rel="icon" href="https://duhufzmjzul3w.cloudfront.net/assets/sketchyfav-79dfb11108ec1891e945b13307a75952.png" type="image/png">
+
+    <meta name="media" content="Ly9kdWh1Znptanp1bDN3LmNsb3VkZnJvbnQubmV0L3VwbG9hZHMvc2VjdGlvbnMvYzQ0NjcyMjktNmY2My00M2U3LWE5ODQtNDM1MDJlZjI5ZDQ5L3ZpZGVvLw==">
+  <meta name="caption" content="">
+<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="Q/vdwp98EgpRiBYzo64SzJ8afYdB1vZizv6Ah/XoR2tPPw/cz2MRvRrxXIfiXGVxom+7RXiwMkgJoqCWkNEh3g==">
+
+<link rel="stylesheet" media="screen" href="./myocardial-response-to-ischemia_files/font-awesome.min.css">
+<link rel="stylesheet" media="screen" href="./myocardial-response-to-ischemia_files/css">
+<link rel="stylesheet" media="screen" href="./myocardial-response-to-ischemia_files/slick.css">
+<link rel="stylesheet" media="screen" href="./myocardial-response-to-ischemia_files/application-bf44aafbe6c8a39ea2fc2fc30faf0325.css">
+
+
+  </head>
+  <body class="sections hotspot ">
+
+    <main class="container">
+
+
+  <div class="row">
+  <div class="col-md-12">
+    <div class="litetooltip-hotspot-wrapper" style="max-width: 1120px">
+<div class="litetooltip-hotspot-container" style="padding-bottom: 56.25%">
+<img src="./myocardial-response-to-ischemia_files/9f9099da804dea0281a09615c5d3d824.png" data-width="1120" data-height="630">
+<div class="hotspot" style="top: 14.127%; left: 14.6429%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1488840847873" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="14.642857142857144" data-hotspot-y="14.126984126984127" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Oxidative forge: cardiac myocytes generate energy almost exclusively through oxidative phosphorylation</div>
+</div>
+
+<div class="hotspot" style="top: 64.7619%; left: 21.5179%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1488840857100" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="21.517857142857146" data-hotspot-y="64.76190476190476" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Oxygen bellows: myocytes extract a higher percentage of oxygen from blood than any other tissue in the body → coronary sinus has most deoxygenated blood</div>
+</div>
+
+<div class="hotspot" style="top: 8.25397%; left: 6.69643%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1488840865525" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="6.696428571428571" data-hotspot-y="8.253968253968253" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Dilated red exhaust pipe: coronary endothelial cells produce nitric oxide (NO), a gaseous molecule that promotes coronary vascular vasodilation</div>
+</div>
+
+<div class="hotspot" style="top: 63.9683%; left: 5.35714%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1488840871994" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="5.357142857142857" data-hotspot-y="63.96825396825396" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">GruMPy blacksmith: NO increases cyclic GMP inside arteriolar smooth muscle cells → coronary vasodilation</div>
+</div>
+
+<div class="hotspot" style="top: 80.1587%; left: 31.1607%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1488840880274" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="31.160714285714285" data-hotspot-y="80.15873015873017" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Dancing with dilated red sleeves: adenosine is an important vasodilator of coronary arteries</div>
+</div>
+
+<div class="hotspot" style="top: 65.873%; left: 13.6607%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1488840890017" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="13.660714285714285" data-hotspot-y="65.87301587301587" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Flat autoregulation graph: autoregulation (via NO and adenosine) normally keeps the coronary blood flow constant across a range of BPs by regulating coronary vasodilation</div>
+</div>
+
+<div class="hotspot" style="top: 6.66667%; left: 24.5536%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1488840897712" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="24.553571428571427" data-hotspot-y="6.666666666666667" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Gunky constricted exhaust pipe: coronary atherosclerosis obstructs luminal flow AND inhibits endothelial cell release of NO and other vasodilators</div>
+</div>
+
+<div class="hotspot" style="top: 41.4286%; left: 25.0893%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1488840952897" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="25.089285714285715" data-hotspot-y="41.42857142857143" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Broken autoregulation gauge: coronary atherosclerosis interferes with autoregulation mechanism and ability to maximally vasodilate</div>
+</div>
+
+<div class="hotspot" style="top: 50.3175%; left: 15.8036%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1488840961044" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="15.803571428571427" data-hotspot-y="50.317460317460316" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Glowing harp: well oxygenated myocardium</div>
+</div>
+
+<div class="hotspot" style="top: 26.6667%; left: 27.5893%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1488840969729" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="27.589285714285715" data-hotspot-y="26.666666666666668" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Cold inner harp surface: subendocardium becomes ischemic first</div>
+</div>
+
+<div class="hotspot" style="top: 2.22222%; left: 41.25%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1488840978615" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="41.25" data-hotspot-y="2.2222222222222223" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">“Supply and demand”: mismatch between myocardial oxygen demand and coronary oxygen supply → ischemic heart disease</div>
+</div>
+
+<div class="hotspot" style="top: 24.2857%; left: 44.8214%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1488840987672" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="44.82142857142858" data-hotspot-y="24.285714285714285" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Pushing load: increased afterload on the heart (e.g. due to aortic stenosis or HTN)</div>
+</div>
+
+<div class="hotspot" style="top: 15.5556%; left: 42.5893%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1488840994174" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="42.589285714285715" data-hotspot-y="15.555555555555555" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Stenotic aortic princess hat and high pressure steam: aortic stenosis and hypertension increase afterload → increased myocardial O2 demand</div>
+</div>
+
+<div class="hotspot" style="top: 37.1429%; left: 43.3036%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1488841003051" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="43.30357142857143" data-hotspot-y="37.142857142857146" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Concentric conch shell: concentric myocardial hypertrophy (due to increased afterload) →  decreased coronary O2 supply</div>
+</div>
+
+<div class="hotspot" style="top: 30%; left: 51.1607%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1488841017294" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="51.160714285714285" data-hotspot-y="30" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Diamonds on left: the LEFT ventricle receives coronary blood flow during diastole</div>
+</div>
+
+<div class="hotspot" style="top: 19.8413%; left: 53.4821%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1488841026957" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="53.482142857142854" data-hotspot-y="19.841269841269842" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Raised heart watch and falling diamonds: tachycardia decreases time in diastole → decreased coronary flow to LEFT ventricle →  myocardial ischemia</div>
+</div>
+
+<div class="hotspot" style="top: 31.2698%; left: 62.9464%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1488841036938" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="62.94642857142857" data-hotspot-y="31.26984126984127" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Running blacksmith: exercise increases myocardial O2 demand (tachycardia and increased contractility)  and decreases coronary O2 supply (tachycardia)</div>
+</div>
+
+<div class="hotspot" style="top: 48.0952%; left: 50.5357%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1488841044935" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="50.535714285714285" data-hotspot-y="48.095238095238095" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Jittery cocoa mug: cocaine increases myocardial O2 demand (tachycardia and increased contractility)</div>
+</div>
+
+<div class="hotspot" style="top: 40.9524%; left: 51.3393%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1488841053812" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="51.33928571428571" data-hotspot-y="40.95238095238095" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Little constricted coronary crown: cocaine causes coronary artery vasoconstriction → decreased coronary O2 supply</div>
+</div>
+
+<div class="hotspot" style="top: 25.0794%; left: 57.2321%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1488841060674" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="57.232142857142854" data-hotspot-y="25.07936507936508" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Pale complexion: systemic hypoxia decreases coronary O2 supply (e.g. hypotension, shock, anemia and carbon monoxide poisoning)</div>
+</div>
+
+<div class="hotspot" style="top: 69.5238%; left: 37.7679%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1488841069719" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="37.76785714285714" data-hotspot-y="69.52380952380952" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Three falling P batteries: within seconds, ischemic myocardial cells switch from aerobic to anaerobic glycolysis → depleted ATP</div>
+</div>
+
+<div class="hotspot" style="top: 60.9524%; left: 42.7679%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1488841076965" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="42.76785714285714" data-hotspot-y="60.952380952380956" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Floppy harp strings: myofibril relaxation seen within SECONDS (depleted ATP in the cardiac myocyte)</div>
+</div>
+
+<div class="hotspot" style="top: 64.6032%; left: 57.3214%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1488841101467" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="57.32142857142857" data-hotspot-y="64.60317460317461" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Puffy harp repairman with candybar and ball of string: early pathologic changes in ischemic myocyte include cellular and mitochondrial swelling, glycogen depletion, and clumping of chromatin (REVERSIBLE cell damage)</div>
+</div>
+
+<div class="hotspot" style="top: 58.5714%; left: 66.6071%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1488841110198" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="66.60714285714285" data-hotspot-y="58.57142857142858" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Repairing harp with new red string: cellular swelling and other early changes are reversible with early reperfusion</div>
+</div>
+
+<div class="hotspot" style="top: 71.2698%; left: 69.2857%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1488841117916" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="69.28571428571428" data-hotspot-y="71.26984126984127" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">“Repaired in 30 min or less”: irreversible damage to cardiac myocytes after ~30 minutes of ischemia</div>
+</div>
+
+<div class="hotspot" style="top: 72.0635%; left: 63.5714%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1488841126128" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="63.57142857142857" data-hotspot-y="72.06349206349206" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Ruptured and vacuolated mitochondrial lute: mitochondrial vacuolization or membrane rupture is a sign of IRREVERSIBLE cell injury</div>
+</div>
+
+<div class="hotspot" style="top: 87.619%; left: 62.8571%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1488841155278" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="62.857142857142854" data-hotspot-y="87.61904761904762" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Spilling ChicKen and T-bone steaks: myocyte cell membrane breakdown (IRREVERSIBLE cell damage)→ release of troponin and creatine kinase</div>
+</div>
+
+<div class="hotspot" style="top: 77.619%; left: 96.0714%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1488841166517" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="96.07142857142857" data-hotspot-y="77.61904761904762" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Stunned girl receiving repaired harp: STUNNED myocardium (viable myocytes do not immediately return to full activity) can last a few hours to days after reperfusion</div>
+</div>
+
+<div class="hotspot" style="top: 89.8413%; left: 74.7321%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1488841175160" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="74.73214285714286" data-hotspot-y="89.84126984126985" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">hypercontracted lute: buildup of intracellular calcium during ischemia → hypercontracture and cytoskeletal damage on reperfusion (REPERFUSION INJURY)</div>
+</div>
+
+<div class="hotspot" style="top: 55.0794%; left: 71.875%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1488841190199" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="71.875" data-hotspot-y="55.07936507936508" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Sparks and fire caused by repairman: reperfusion results in local release of free radicals, influx of inflammation, and further irreversible mitochondrial damage (REPERFUSION INJURY)</div>
+</div>
+
+<div class="hotspot" style="top: 15.5556%; left: 69.6429%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1488841198579" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="69.64285714285714" data-hotspot-y="15.555555555555555" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Old grandfather clock: Chronic ischemic heart disease (aka “ischemic cardiomyopathy”) → progressive heart failure</div>
+</div>
+
+<div class="hotspot" style="top: 27.4603%; left: 76.5179%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1488841207648" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="76.51785714285714" data-hotspot-y="27.460317460317462" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Patched-up and discarded lute frame: chronically ischemic hearts usually have evidence of “patchy fibrosis” from previous healed infarcts (more rarely, chronic severe CAD w/o infarct can also cause chronic ischemic heart disease)</div>
+</div>
+
+<div class="hotspot" style="top: 6.66667%; left: 77.0536%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1488841215748" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="77.05357142857143" data-hotspot-y="6.666666666666667" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Floppy heart balloon above dilated lute frame: Chronic cardiac ischemia → systolic heart failure with eccentric hypertrophy</div>
+</div>
+
+<div class="hotspot" style="top: 39.2063%; left: 91.6964%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1488841231183" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="91.69642857142857" data-hotspot-y="39.20634920634921" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Hibernating bear: chronically ischemic hearts may contain nonviable myocardial cells along with “hibernating” viable myocardial cells </div>
+</div>
+
+<div class="hotspot" style="top: 32.2222%; left: 80.5357%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1488841239474" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="80.53571428571429" data-hotspot-y="32.22222222222222" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Waking hibernating bear with vascular hose: revascularize a chronically ischemic heart to reactivate viable myocardial cells (reverse systolic dysfunction)</div>
+</div>
+
+</div>
+</div>
+
+
+  </div>
+</div>
+</main>
+
+      <footer id="footer">
+
+</footer>
+
+<div class="modal fade contact-modal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+        <h4 class="modal-title" id="contactModalLabel">Contact Us</h4>
+      </div>
+      <div class="modal-body">
+        <p class="text-muted">Use the form below to contact us. We will try to get back to you as soon as possible!</p>
+        <form id="contact_form">
+          <div class="form-group">
+            <label>Name</label>
+            <input type="text" name="name" placeholder="Name" class="form-control input-lg">
+          </div>
+
+          <div class="form-group">
+            <label>E-mail Address</label>
+            <input type="text" name="email" placeholder="E-mail address" class="form-control input-lg">
+          </div>
+
+          <div class="form-group">
+            <label>Subject</label>
+            <input type="text" name="subject" placeholder="Subject" class="form-control input-lg">
+          </div>
+
+          <div class="form-group">
+            <label>Message</label>
+            <textarea name="message" class="form-control" rows="6"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer text-center">
+        <a href="https://www.sketchymedical.com/sections/c4467229-6f63-43e7-a984-43502ef29d49/hotspot#" class="btn btn-signup cta" id="contact_form_submit">Submit</a>
+        <!--<a href="#" class="btn btn-signup cta">Login</a>-->
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade contact-success-modal" tabindex="-1" role="dialog" aria-labelledby="contactSuccessModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+      </div>
+      <div class="modal-body">
+        Message successfully sent!
+      </div>
+      <div class="modal-footer text-center">
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+    <script type="text/javascript" async="" src="./myocardial-response-to-ischemia_files/analytics.js.download"></script><script async="" src="./myocardial-response-to-ischemia_files/gtm.js.download"></script><script src="./myocardial-response-to-ischemia_files/application-99cd8366e1ad296e78f7d8512c1901ee.js.download"></script>
+
+<script type="text/javascript" src="./myocardial-response-to-ischemia_files/saved_resource"></script>
+<script type="text/javascript">
+  Stripe.setPublishableKey("pk_live_pIsHXdJBqpwMc739H16zbOyv");
+</script>
+
+<noscript>
+  &lt;iframe src="//www.googletagmanager.com/ns.html?id=GTM-P3BMBC" height="0" width="0" style="display:none;visibility:hidden"&gt;&lt;/iframe&gt;
+</noscript>
+<script>
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-P3BMBC');
+</script>
+<script src="./myocardial-response-to-ischemia_files/slick.min.js.download"></script>
+
+  
+
+<iframe name="stripeXDM_default345060_provider" id="stripeXDM_default345060_provider" src="./myocardial-response-to-ischemia_files/channel.html" frameborder="0" style="position: absolute; top: -2000px; left: 0px;"></iframe></body></html>

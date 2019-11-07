@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<!-- saved from url=(0084)https://www.sketchymedical.com/sections/caf77a80-cebf-4abe-a648-cddda5097d6e/hotspot -->
+<html lang="en"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<!-- <meta http-equiv="X-UA-Compatible" content="IE=7" />
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"f34a1877e4","applicationID":"9022742","transactionName":"IVwPQBRXDVtRRBkQBAFHCFsIS05fW0JFEw4W","queueTime":0,"applicationTime":44,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[(new Date).getTime()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(s,function(e,t){f[t]=o(l+t,!0,"api")}),f.addPageAction=o(l+"addPageAction",!0),f.setCurrentRouteName=o(l+"routeName",!0),t.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(p+"tracer",[Date.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return t.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){d[t]=o(p+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o){if(!p.aborted){e&&e(n,r,o);for(var i=t(o),a=v(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var f=s[w[n]];return f&&f.push([y,n,r,i]),i}}function d(e,t){b[e]=v(e).concat(t)}function v(e){return b[e]||[]}function g(e){return l[e]=l[e]||o(n)}function m(e,t){f(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var b={},w={},y={on:d,emit:n,get:g,listeners:v,context:t,buffer:m,abort:a,aborted:!1};return y}function i(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},l={},p=t.exports=o();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!h++){var e=y.info=NREUM.info,t=l.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return f.abort();c(b,function(t,n){e[t]||(e[t]=n)}),u("mark",["onload",a()],null,"api");var n=l.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===l.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=e("ee"),s=window,l=s.document,p="addEventListener",d="attachEvent",v=s.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:v,REQ:s.Request,EV:s.Event,PR:s.Promise,MO:s.MutationObserver},e(1);var m=""+location,b={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1016.min.js"},w=v&&g&&g[p]&&!/CriOS/.test(navigator.userAgent),y=t.exports={offset:a(),origin:m,features:{},xhrWrappable:w};l[p]?(l[p]("DOMContentLoaded",i,!1),s[p]("load",r,!1)):(l[d]("onreadystatechange",o),s[d]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script> -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  NSAIDs
+</title>
+<meta name="description" content="Unknown Meta Description">
+<meta name="keywords" content="Unknown Meta Keywords">
+<meta name="author" content="Unknown Meta Author">
+<meta property="og:title" content="Unknown Meta OG Title">
+<meta property="og:url" content="Unknown Meta OG URL">
+<meta property="og:image" content="Unknown Meta OG Cover">
+<meta property="og:description" content="Unknown Meta OG Description">
+
+<link rel="icon" href="https://duhufzmjzul3w.cloudfront.net/assets/sketchyfav-79dfb11108ec1891e945b13307a75952.png" type="image/png">
+
+    <meta name="media" content="Ly9kdWh1Znptanp1bDN3LmNsb3VkZnJvbnQubmV0L3VwbG9hZHMvc2VjdGlvbnMvY2FmNzdhODAtY2ViZi00YWJlLWE2NDgtY2RkZGE1MDk3ZDZlL3ZpZGVvLw==">
+  <meta name="caption" content="">
+<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="eJ+uMyK/X6IGfV9qx2RqQZ+b7fzxHNNYYYuTF+aMfb7vsglRYrvGnyzGCsKK5W18Hf7pOzSGabOZ1nNzmlnKSw==">
+
+<link rel="stylesheet" media="screen" href="./nsaids_files/font-awesome.min.css">
+<link rel="stylesheet" media="screen" href="./nsaids_files/css">
+<link rel="stylesheet" media="screen" href="./nsaids_files/slick.css">
+<link rel="stylesheet" media="screen" href="./nsaids_files/application-ff1b8e68bf3c58b9bbc8021b428b3bc8.css">
+
+
+  </head>
+  <body class="sections hotspot ">
+
+    <main class="container">
+
+
+  <div class="row">
+  <div class="col-md-12">
+    <div class="litetooltip-hotspot-wrapper" style="max-width: 1120px">
+<div class="litetooltip-hotspot-container" style="padding-bottom: 56.25%">
+<img src="./nsaids_files/dc5d6fcbcbb1cf6601ead09b090d52c6.png" data-width="1120" data-height="630">
+<div class="hotspot" style="top: 22.6984%; left: 34.0179%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1456940359245" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="34.017857142857146" data-hotspot-y="22.6984126984127" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">AA league: arachidonic acid (precursor molecule to prostanoids and leukotrienes</div>
+</div>
+
+<div class="hotspot" style="top: 17.4603%; left: 32.8571%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1456940377056" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="32.857142857142854" data-hotspot-y="17.46031746031746" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">PLA2y ball: phospholipase A2 (PLA2) hydrolyzes arachidonic acid from the cell membrane</div>
+</div>
+
+<div class="hotspot" style="top: 60%; left: 78%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1456940377056" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="32.857142857142854" data-hotspot-y="17.46031746031746" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Thrombus ice cubes: celecoxib may increase the risk of ischemic cardiovascular disease</div>
+</div>
+
+<div class="hotspot" style="top: 33.8095%; left: 39.4643%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1456940400060" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="39.464285714285715" data-hotspot-y="33.80952380952381" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Head coach Cox: cyclooxygenase-1 (COX-1) is constitutively expressed</div>
+</div>
+
+<div class="hotspot" style="top: 26.8254%; left: 24.9107%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1456940410427" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="24.910714285714285" data-hotspot-y="26.825396825396826" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Assistant coach: cyclooxygenase-2 (COX-2) expression is induced by inflammation</div>
+</div>
+
+<div class="hotspot" style="top: 50.9524%; left: 41.5179%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1456940438882" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="41.517857142857146" data-hotspot-y="50.95238095238095" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Batter’s box: thromboxane A2 (TXA2) is synthesized by COX-1</div>
+</div>
+
+<div class="hotspot" style="top: 29.8413%; left: 39.0179%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1456940452432" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="39.017857142857146" data-hotspot-y="29.841269841269842" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Twisted red hat: TXA2 (synthesized by COX-1) causes vasoconstriction</div>
+</div>
+
+<div class="hotspot" style="top: 26.5079%; left: 45.7143%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1456940463771" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="45.714285714285715" data-hotspot-y="26.50793650793651" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Pro-slugger bat: prostaglandins</div>
+</div>
+
+<div class="hotspot" style="top: 42.0635%; left: 51.5179%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1456940542225" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="51.51785714285714" data-hotspot-y="42.06349206349206" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">￼Pro-slugger protecting catcher with gastrointestinal pads: COX-1 synthesizes gastric
+￼cytoprotective prostaglandin</div>
+</div>
+
+<div class="hotspot" style="top: 19.5238%; left: 20.9821%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1456940676658" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="20.982142857142858" data-hotspot-y="19.523809523809526" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Assistant coach in endothelial dugout: COX-2 is expressed in vascular endothelial and smooth muscle cells</div>
+</div>
+
+<div class="hotspot" style="top: 30.9524%; left: 19.9107%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1456941013686" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="19.910714285714285" data-hotspot-y="30.952380952380953" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Pro-cycler pitching machine: prostacyclin (PGI2) is synthesized by COX-2</div>
+</div>
+
+<div class="hotspot" style="top: 20.6349%; left: 17.0536%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1456941030156" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="17.05357142857143" data-hotspot-y="20.634920634920633" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Pro-cycler’s dilated red barrel: PGI2 causes vasodilation</div>
+</div>
+
+<div class="hotspot" style="top: 5.71429%; left: 16.9643%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1456941065147" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="16.964285714285715" data-hotspot-y="5.714285714285714" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Pro-cycler dispersing the plates: PGI2 inhibits platelet aggregation</div>
+</div>
+
+<div class="hotspot" style="top: 0.793651%; left: 54.1964%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1456941112284" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="54.19642857142857" data-hotspot-y="0.7936507936507936" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">￼￼￼Pro-sluggers at the afferent tunnel: COX-1 and COX-2 synthesize prostaglandins that dilate ￼the afferent arteriole</div>
+</div>
+
+<div class="hotspot" style="top: 48.7302%; left: 7.41071%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1456941145083" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="7.410714285714286" data-hotspot-y="48.73015873015873" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">￼Pro-slugger activating the sprinkler: COX-2 synthesizes prostaglandins that increase
+￼vascular permeability</div>
+</div>
+
+<div class="hotspot" style="top: 36.8254%; left: 15.9821%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1456941161708" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="15.982142857142856" data-hotspot-y="36.82539682539683" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Pro-slugger in pain: COX-2 synthesizes prostaglandins that increase pain sensitivity</div>
+</div>
+
+<div class="hotspot" style="top: 25.7143%; left: 10.8929%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1456941182475" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="10.892857142857142" data-hotspot-y="25.71428571428571" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Pro-slugger with flaming head: COX-2 synthesizes prostaglandins that induce fever</div>
+</div>
+
+<div class="hotspot" style="top: 64.9206%; left: 77.1429%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1456941203211" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="77.14285714285715" data-hotspot-y="64.92063492063492" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Head coach Cox: cyclooxygenase-1 (COX-1) is constitutively expressed</div>
+</div>
+
+<div class="hotspot" style="top: 58.8889%; left: 82.4107%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1456941213209" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="82.41071428571428" data-hotspot-y="58.88888888888889" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Assistant coach: cyclooxygenase-2 (COX-2) expression is induced by inflammation</div>
+</div>
+
+<div class="hotspot" style="top: 70.4762%; left: 68.8393%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1456941297854" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="68.83928571428571" data-hotspot-y="70.47619047619048" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Anti-inflammatory fire extinguisher: non-steroidal anti-inflammatory drugs (NSAIDs)</div>
+</div>
+
+<div class="hotspot" style="top: 70.3175%; left: 73.5714%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1456941330526" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="73.57142857142858" data-hotspot-y="70.31746031746032" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">￼Head coach and assistant coach doused by fire extinguisher: NSAIDs reversibly inhibit both COX-1 and COX-2
+￼</div>
+</div>
+
+<div class="hotspot" style="top: 18.7302%; left: 86.3393%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1456941342813" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="86.33928571428572" data-hotspot-y="18.73015873015873" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">BLAC sox: diclofenac and ketorolac (NSAIDs)</div>
+</div>
+
+<div class="hotspot" style="top: 48.0952%; left: 88.125%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1456941354662" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="88.125" data-hotspot-y="48.095238095238095" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">INDIGO sox: indomethacin (NSAID)</div>
+</div>
+
+<div class="hotspot" style="top: 7.61905%; left: 90.8929%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1456941369957" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="90.89285714285714" data-hotspot-y="7.6190476190476195" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">SOX CAM: meloxicam and piroxicam (NSAIDs)</div>
+</div>
+
+<div class="hotspot" style="top: 15.5556%; left: 89.375%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1456941389008" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="89.375" data-hotspot-y="15.555555555555555" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">ApPROXimately 110 mph: naproxen (NSAID)</div>
+</div>
+
+<div class="hotspot" style="top: 9.04762%; left: 70.4464%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1456941428664" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="70.44642857142858" data-hotspot-y="9.047619047619047" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Ketchup on clock: inhibition of COX-1 by NSAIDs can prolong bleeding time</div>
+</div>
+
+<div class="hotspot" style="top: 88.8889%; left: 42.2321%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1456941462622" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="42.232142857142854" data-hotspot-y="88.88888888888889" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">￼Bursting from high pressure: NSAIDs can increase blood pressure due to COX inhibition in the kidney, decreasing sodium excretion</div>
+</div>
+
+<div class="hotspot" style="top: 75.7143%; left: 56.6071%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1456941481369" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="56.607142857142854" data-hotspot-y="75.71428571428571" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Ketchup on the gastrointestinal pads: inhibition of COX-1 by NSAIDs can cause GI bleeding</div>
+</div>
+
+<div class="hotspot" style="top: 70.4762%; left: 44.9107%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1456941508488" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="44.910714285714285" data-hotspot-y="70.47619047619048" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Burned hole in the gastrointestinal pads: inhibition of COX-1 by NSAIDs can cause gastric inflammation, erosions, and ulceration</div>
+</div>
+
+<div class="hotspot" style="top: 87.7778%; left: 60.8929%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1456941551063" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="60.89285714285714" data-hotspot-y="87.77777777777777" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Baseball-filled kidney containers: NSAIDs can cause acute interstitial nephritis</div>
+</div>
+
+<div class="hotspot" style="top: 77.7778%; left: 45.625%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1456941583913" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="45.625" data-hotspot-y="77.77777777777779" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">￼Constricted proximal end of hose: NSAIDs cause afferent arteriole vasoconstriction, decreasing GFR</div>
+</div>
+
+<div class="hotspot" style="top: 94.4444%; left: 44.6429%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1456941672583" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="44.642857142857146" data-hotspot-y="94.44444444444444" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Sloughing off cleat spikes: NSAIDs can cause renal papillary necrosis (sloughing of renal papillae)</div>
+</div>
+
+<div class="hotspot" style="top: 56.5079%; left: 64.2857%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1456941696265" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="64.28571428571429" data-hotspot-y="56.507936507936506" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Elevated “lift-ium” balloons: NSAIDs can increase serum lithium concentrations</div>
+</div>
+
+<div class="hotspot" style="top: 54.9206%; left: 58.2143%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1456941726319" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="58.214285714285715" data-hotspot-y="54.920634920634924" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Plastic Bone-shaped balloon: NSAIDs (indomethacin most commonly) can cause aplastic anemia</div>
+</div>
+
+<div class="hotspot" style="top: 78.5714%; left: 14.8214%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1456941768289" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="14.821428571428571" data-hotspot-y="78.57142857142857" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Depleted mineral mine: NSAIDs can cause hypoaldosteronism (decreased mineralocorticoids)</div>
+</div>
+
+<div class="hotspot" style="top: 92.8571%; left: 5.35714%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1456941788590" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="5.357142857142857" data-hotspot-y="92.85714285714286" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Big K: NSAID induced hypoaldosteronism can cause hyperkalemia</div>
+</div>
+
+<div class="hotspot" style="top: 30.7937%; left: 29.6429%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1456941797617" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="29.642857142857142" data-hotspot-y="30.793650793650794" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">ASA umpire: aspirin</div>
+</div>
+
+<div class="hotspot" style="top: 31.1111%; left: 35.2679%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1456941815817" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="35.267857142857146" data-hotspot-y="31.11111111111111" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">ASA umpire ejecting the coaches: aspirin irreversibly inhibits COX-1 and COX-2</div>
+</div>
+
+<div class="hotspot" style="top: 36.0317%; left: 29.4643%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1456941856583" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="29.464285714285715" data-hotspot-y="36.03174603174603" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Acetylation whistle: aspirin acetylates COX-1 and COX-2 resulting in irreversible inhibition</div>
+</div>
+
+<div class="hotspot" style="top: 56.5079%; left: 25.3571%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1456941893814" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="25.357142857142854" data-hotspot-y="56.507936507936506" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">￼Child in Kawasaki’s ATV: aspirin is useful in Kawasaki disease (the most common vasculitis syndrome of childhood)</div>
+</div>
+
+<div class="hotspot" style="top: 66.1905%; left: 9.28571%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1456941917687" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="9.285714285714286" data-hotspot-y="66.19047619047619" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Rays: Aspirin use in children can lead to development of Reye’s syndrome (rapidly
+￼progressive encephalopathy with hepatic dysfunction</div>
+</div>
+
+<div class="hotspot" style="top: 72.0635%; left: 9.73214%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1456941934834" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="9.732142857142858" data-hotspot-y="62.06349206349206" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Tissue box: Reye’s syndrome occurs when a child is given aspirin in the setting of a viral illnes</div>
+</div>
+
+<div class="hotspot" style="top: 57.9365%; left: 7.23214%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1456941943989" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="7.232142857142858" data-hotspot-y="57.936507936507944" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Brain hat: Reye’s syndrome encephalopathy (e.g. confusion, seizure, coma)</div>
+</div>
+
+<div class="hotspot" style="top: 68.254%; left: 14.0179%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1456941978827" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="14.017857142857142" data-hotspot-y="68.25396825396825" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Fat liver spot: Reye’s syndrome hepatic dysfunction (e.g. hepatic steatosis, hepatomegaly)</div>
+</div>
+
+<div class="hotspot" style="top: 63.1746%; left: 27.9464%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1456942008847" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="27.946428571428573" data-hotspot-y="63.17460317460317" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">￼Mudpile: aspirin toxicity can cause an anion gap metabolic acidosis (S in MUDPILES)</div>
+</div>
+
+<div class="hotspot" style="top: 53.1746%; left: 31.25%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1456942024257" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="31.25" data-hotspot-y="53.17460317460318" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Blowing “OH-” bubbles: aspirin causes a respiratory alkalosis</div>
+</div>
+
+<div class="hotspot" style="top: 74.9206%; left: 35.625%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1456942032911" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="35.625" data-hotspot-y="74.92063492063492" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Tin cans: aspirin can cause tinnitus</div>
+</div>
+
+<div class="hotspot" style="top: 10%; left: 31.875%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1456942045822" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="31.874999999999996" data-hotspot-y="10" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Charcoal lines: activated charcoal can be used to absorb aspirin in setting of acute toxicity</div>
+</div>
+
+<div class="hotspot" style="top: 13.4921%; left: 26.0714%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1456942205084" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="26.071428571428573" data-hotspot-y="13.492063492063492" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">￼Bases loaded hose: alkalinization of the serum and urine with a basic solution (e.g. sodium ￼bicarbonate) increases the renal excretion of aspirin</div>
+</div>
+
+<div class="hotspot" style="top: 9.52381%; left: 55.0893%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1456942252480" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="55.089285714285715" data-hotspot-y="9.523809523809524" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">￼Fire extinguisher behind cracked kidney-shaped glass: minimize NSAID use in patients at risk for acute kidney injury</div>
+</div>
+
+<div class="hotspot" style="top: 18.4127%; left: 62.3214%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1456942298404" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="62.32142857142857" data-hotspot-y="18.412698412698415" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">￼Exiting pregnant lady: avoid NSAIDs in 3rd trimester due to risk of premature closure of ductus arteriosus (highest risk with indomethacin and ibuprofen)</div>
+</div>
+
+<div class="hotspot" style="top: 53.6508%; left: 72.3214%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1456942318055" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="72.32142857142857" data-hotspot-y="53.65079365079365" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Celebrating catcher drenching the assistant coach: celecoxib is a selective COX-2 inhibitor</div>
+</div>
+
+<div class="hotspot" style="top: 58.0952%; left: 72.8571%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1456942357741" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="72.85714285714285" data-hotspot-y="58.0952380952381" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Clean gastrointestinal pads: celecoxib has a reduced ulcer and bleeding risk by avoiding COX-1 inihibtion</div>
+</div>
+
+<div class="hotspot" style="top: 47.3016%; left: 79.7321%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1456942422886" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="79.73214285714286" data-hotspot-y="47.3015873015873" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Rotten sulfur eggs: celecoxib is a sulfa drug</div>
+</div>
+
+<div class="hotspot" style="top: 66.3492%; left: 84.1071%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1456942484153" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="84.10714285714286" data-hotspot-y="66.34920634920634" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">￼Icy medicine spray on assistant coach: acetaminophen inhibits COX-2, acting as an antipyretic and analgesic (not anti-inflammatory)</div>
+</div>
+
+<div class="hotspot" style="top: 89.5238%; left: 74.9107%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1456942545211" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="74.91071428571429" data-hotspot-y="89.52380952380953" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Goat scared by the icy-medicine: toxic levels of acetaminophen deplete glutathione in the ￼liver (inactivates the toxic metabolite: NAPQI)</div>
+</div>
+
+<div class="hotspot" style="top: 89.3651%; left: 79.8214%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1456942557938" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="79.82142857142858" data-hotspot-y="89.36507936507937" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Liver spot: acetaminophen causes hepatotoxicity (via the toxic metabolite: NAPQI)</div>
+</div>
+
+<div class="hotspot" style="top: 58.0952%; left: 90.625%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1456942577198" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="90.625" data-hotspot-y="58.0952380952381" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">N-flower seeds: n-acetylcysteine</div>
+</div>
+
+<div class="hotspot" style="top: 57.7778%; left: 97.2321%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1456942633219" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="97.23214285714286" data-hotspot-y="57.77777777777777" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Goat attracted by N-flower seeds: n-acetylcysteine restores hepatic glutathione stores to treat acetaminophen hepatotoxicity</div>
+</div>
+
+<div class="hotspot" style="top: 55.3968%; left: 93.3929%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1456942679426" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="93.39285714285714" data-hotspot-y="55.3968253968254" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">￼Charcoal lines: activated charcoal can be used to absorb acetaminophen in setting of acute toxicity</div>
+</div>
+
+</div>
+</div>
+
+  </div>
+</div>
+</main>
+
+      <footer id="footer">
+
+</footer>
+
+<div class="modal fade contact-modal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+        <h4 class="modal-title" id="contactModalLabel">Contact Us</h4>
+      </div>
+      <div class="modal-body">
+        <p class="text-muted">Use the form below to contact us. We will try to get back to you as soon as possible!</p>
+        <form id="contact_form">
+          <div class="form-group">
+            <label>Name</label>
+            <input type="text" name="name" placeholder="Name" class="form-control input-lg">
+          </div>
+
+          <div class="form-group">
+            <label>E-mail Address</label>
+            <input type="text" name="email" placeholder="E-mail address" class="form-control input-lg">
+          </div>
+
+          <div class="form-group">
+            <label>Subject</label>
+            <input type="text" name="subject" placeholder="Subject" class="form-control input-lg">
+          </div>
+
+          <div class="form-group">
+            <label>Message</label>
+            <textarea name="message" class="form-control" rows="6"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer text-center">
+        <a href="https://www.sketchymedical.com/sections/caf77a80-cebf-4abe-a648-cddda5097d6e/hotspot#" class="btn btn-signup cta" id="contact_form_submit">Submit</a>
+        <!--<a href="#" class="btn btn-signup cta">Login</a>-->
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade contact-success-modal" tabindex="-1" role="dialog" aria-labelledby="contactSuccessModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+      </div>
+      <div class="modal-body">
+        Message successfully sent!
+      </div>
+      <div class="modal-footer text-center">
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+    <script type="text/javascript" async="" src="./nsaids_files/analytics.js.download"></script><script async="" src="./nsaids_files/gtm.js.download"></script><script src="./nsaids_files/application-99dbe923029ab824ecde941c5a23ad1e.js.download"></script>
+
+<script type="text/javascript" src="./nsaids_files/saved_resource"></script>
+<script type="text/javascript">
+  Stripe.setPublishableKey("pk_live_pIsHXdJBqpwMc739H16zbOyv");
+</script>
+
+<noscript>
+  &lt;iframe src="//www.googletagmanager.com/ns.html?id=GTM-P3BMBC" height="0" width="0" style="display:none;visibility:hidden"&gt;&lt;/iframe&gt;
+</noscript>
+<script>
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-P3BMBC');
+</script>
+<script src="./nsaids_files/slick.min.js.download"></script>
+
+  
+
+<iframe name="stripeXDM_default651687_provider" id="stripeXDM_default651687_provider" src="./nsaids_files/channel.html" frameborder="0" style="position: absolute; top: -2000px; left: 0px;"></iframe></body></html>

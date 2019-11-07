@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<!-- saved from url=(0084)https://www.sketchymedical.com/sections/b03d47da-93d2-4c71-8c82-9a0fbd971c81/hotspot -->
+<html lang="en"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<!-- <meta http-equiv="X-UA-Compatible" content="IE=7" />
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"f34a1877e4","applicationID":"9022742","transactionName":"IVwPQBRXDVtRRBkQBAFHCFsIS05fW0JFEw4W","queueTime":1,"applicationTime":214,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[(new Date).getTime()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(s,function(e,t){f[t]=o(l+t,!0,"api")}),f.addPageAction=o(l+"addPageAction",!0),f.setCurrentRouteName=o(l+"routeName",!0),t.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(p+"tracer",[Date.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return t.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){d[t]=o(p+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o){if(!p.aborted){e&&e(n,r,o);for(var i=t(o),a=v(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var f=s[w[n]];return f&&f.push([y,n,r,i]),i}}function d(e,t){b[e]=v(e).concat(t)}function v(e){return b[e]||[]}function g(e){return l[e]=l[e]||o(n)}function m(e,t){f(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var b={},w={},y={on:d,emit:n,get:g,listeners:v,context:t,buffer:m,abort:a,aborted:!1};return y}function i(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},l={},p=t.exports=o();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!h++){var e=y.info=NREUM.info,t=l.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return f.abort();c(b,function(t,n){e[t]||(e[t]=n)}),u("mark",["onload",a()],null,"api");var n=l.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===l.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=e("ee"),s=window,l=s.document,p="addEventListener",d="attachEvent",v=s.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:v,REQ:s.Request,EV:s.Event,PR:s.Promise,MO:s.MutationObserver},e(1);var m=""+location,b={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1016.min.js"},w=v&&g&&g[p]&&!/CriOS/.test(navigator.userAgent),y=t.exports={offset:a(),origin:m,features:{},xhrWrappable:w};l[p]?(l[p]("DOMContentLoaded",i,!1),s[p]("load",r,!1)):(l[d]("onreadystatechange",o),s[d]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script> -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  Levodopa/carbidopa, entacapone, tolcapone, selegiline, ropinirole, pramipexole, amantadine
+</title>
+<meta name="description" content="Unknown Meta Description">
+<meta name="keywords" content="Unknown Meta Keywords">
+<meta name="author" content="Unknown Meta Author">
+<meta property="og:title" content="Unknown Meta OG Title">
+<meta property="og:url" content="Unknown Meta OG URL">
+<meta property="og:image" content="Unknown Meta OG Cover">
+<meta property="og:description" content="Unknown Meta OG Description">
+
+<link rel="icon" href="https://duhufzmjzul3w.cloudfront.net/assets/sketchyfav-79dfb11108ec1891e945b13307a75952.png" type="image/png">
+
+    <meta name="media" content="Ly9kdWh1Znptanp1bDN3LmNsb3VkZnJvbnQubmV0L3VwbG9hZHMvc2VjdGlvbnMvYjAzZDQ3ZGEtOTNkMi00YzcxLThjODItOWEwZmJkOTcxYzgxL3ZpZGVvLw==">
+  <meta name="caption" content="">
+<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="jgbbUoEckA5pY5wgrutFq/0wX1eGYGNEbWGpKIwW5y8ZK3wwwRgJM0PYyYjjakKWf1VbkEP62a+VPElM8MNQ2g==">
+
+<link rel="stylesheet" media="screen" href="./levodopa-carbidopa-entacapone-tolcapone-selegiline-ropinirole-pramipexole-amantadine_files/font-awesome.min.css">
+<link rel="stylesheet" media="screen" href="./levodopa-carbidopa-entacapone-tolcapone-selegiline-ropinirole-pramipexole-amantadine_files/css">
+<link rel="stylesheet" media="screen" href="./levodopa-carbidopa-entacapone-tolcapone-selegiline-ropinirole-pramipexole-amantadine_files/slick.css">
+<link rel="stylesheet" media="screen" href="./levodopa-carbidopa-entacapone-tolcapone-selegiline-ropinirole-pramipexole-amantadine_files/application-ff1b8e68bf3c58b9bbc8021b428b3bc8.css">
+
+
+  </head>
+  <body class="sections hotspot ">
+
+    <main class="container">
+
+
+  <div class="row">
+  <div class="col-md-12">
+    <div class="litetooltip-hotspot-wrapper" style="max-width: 1120px">
+<div class="litetooltip-hotspot-container" style="padding-bottom: 56.25%">
+<img src="./levodopa-carbidopa-entacapone-tolcapone-selegiline-ropinirole-pramipexole-amantadine_files/f45f7040f9da1a1be78a3d42d4632960.png" data-width="1120" data-height="630">
+<div class="hotspot" style="top: 43.0159%; left: 39.5536%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1462773408428" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="39.55357142857142" data-hotspot-y="43.01587301587302" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Cracked open cogwheels: parkinsonism therapy</div>
+</div>
+
+<div class="hotspot" style="top: 16.0317%; left: 57.4107%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1462773435253" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="57.410714285714285" data-hotspot-y="16.03174603174603" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Bank vault threshold: blood brain barrier (BBB)</div>
+</div>
+
+<div class="hotspot" style="top: 90%; left: 70.9821%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1462773467549" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="70.98214285714286" data-hotspot-y="90" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">“L” rope crank inside vault: levodopa (L-DOPA) crosses the BBB</div>
+</div>
+
+<div class="hotspot" style="top: 28.0952%; left: 97.4107%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1462773491617" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="97.41071428571428" data-hotspot-y="28.095238095238095" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Unfurled rope in vault: levodopa is converted to dopamine by DOPA decarboxylase in the CNS</div>
+</div>
+
+<div class="hotspot" style="top: 89.0476%; left: 45.5357%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1462773508851" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="45.535714285714285" data-hotspot-y="89.04761904761904" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Unfurled rope in lobby: levodopa is converted to dopamine by DOPA decarboxylase in the periphery (can’t cross BBB)</div>
+</div>
+
+<div class="hotspot" style="top: 83.8095%; left: 37.7679%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1462773522614" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="37.76785714285714" data-hotspot-y="83.80952380952381" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Nauseated hostage: levodopa can cause GI distress (due to peripheral conversion into dopamine)</div>
+</div>
+
+<div class="hotspot" style="top: 86.5079%; left: 25.7143%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1462773537148" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="25.71428571428571" data-hotspot-y="86.5079365079365" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Arrhythmia rope: levodopa can cause cardiac arrhythmias (due to peripheral conversion into dopamine)</div>
+</div>
+
+<div class="hotspot" style="top: 70.9524%; left: 24.5536%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1462773551601" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="24.553571428571427" data-hotspot-y="70.95238095238095" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Passed out hostage: levodopa can cause orthostatic hypotension (due to peripheral conversion into dopamine)</div>
+</div>
+
+<div class="hotspot" style="top: 74.6032%; left: 17.6786%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1462773575290" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="17.67857142857143" data-hotspot-y="74.60317460317461" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Psychiatrically disturbed hostage: levodopa can cause neuropsychiatric symptoms e.g. anxiety, agitation, insomnia, confusion, hallucination (due to excess dopamine in the CNS)</div>
+</div>
+
+<div class="hotspot" style="top: 91.4286%; left: 81.4286%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1462773593740" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="81.42857142857143" data-hotspot-y="91.42857142857143" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">End of rope wearing-off: chronic levodopa therapy can cause a wearing-off reaction (akinesia and dyskinesia re-emerge at the end of each dose)</div>
+</div>
+
+<div class="hotspot" style="top: 38.5714%; left: 71.6071%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1462773637527" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="71.60714285714286" data-hotspot-y="38.57142857142858" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">“Too long!”: chronic levodopa therapy can cause response fluctuations (wearing-off reaction, on-off phenomenon) and dyskinesias</div>
+</div>
+
+<div class="hotspot" style="top: 16.6667%; left: 74.8214%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1462773631309" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="74.82142857142857" data-hotspot-y="16.666666666666664" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Flashing on and off: chronic levodopa therapy can cause an on-off phenomenon (periods of akinesia alternate with periods of improved mobility, not related to dose)</div>
+</div>
+
+<div class="hotspot" style="top: 56.1905%; left: 74.8214%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1462773654484" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="74.82142857142857" data-hotspot-y="56.19047619047619" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Narrowing window: the therapeutic window of levodopa therapy narrows as Parkinson’s progresses (unpredictable response to therapy)</div>
+</div>
+
+<div class="hotspot" style="top: 41.4286%; left: 81.875%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1462773674332" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="81.875" data-hotspot-y="41.42857142857143" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Writhing sneeze: chronic levodopa therapy can cause dyskinesias (choreoathetosis of the face and distal extremities)</div>
+</div>
+
+<div class="hotspot" style="top: 77.3016%; left: 95.3571%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1462773695622" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="95.35714285714286" data-hotspot-y="77.3015873015873" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Damaged psychotic painting: levodopa is contraindicated in psychotic patients</div>
+</div>
+
+<div class="hotspot" style="top: 48.7302%; left: 0.714286%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1462773716187" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="0.7142857142857143" data-hotspot-y="48.73015873015873" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Police car on periphery: carbidopa (peripheral DOPA decarboxylase inhibitor)</div>
+</div>
+
+<div class="hotspot" style="top: 56.6667%; left: 4.55357%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1462773731191" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="4.553571428571428" data-hotspot-y="56.666666666666664" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Scared into vault: carbidopa increases the bioavailability of levodopa (prevents peripheral conversion into dopamine)</div>
+</div>
+
+<div class="hotspot" style="top: 69.3651%; left: 8.83929%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1462773748877" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="8.839285714285715" data-hotspot-y="69.36507936507937" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Pulling away from hostages: carbidopa decreases peripheral side effects of levodopa therapy (but exacerbates neuropsychiatric side effects)</div>
+</div>
+
+<div class="hotspot" style="top: 48.5714%; left: 9.01786%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1462773780122" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="9.017857142857142" data-hotspot-y="48.57142857142857" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">InTerCOM guard shooting “L” crank: catechol-O-methyltransferase (COMT) converts levodopa to 3-O-methyldopa (3-OMD) in the periphery</div>
+</div>
+
+<div class="hotspot" style="top: 43.6508%; left: 19.6429%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1462773801892" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="19.642857142857142" data-hotspot-y="43.65079365079365" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Tall Al Capone gangster: tolcapone (a peripheral and central COMT inhibitor) increases the bioavailability of levodopa</div>
+</div>
+
+<div class="hotspot" style="top: 46.0317%; left: 27.9464%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1462773816423" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="27.946428571428573" data-hotspot-y="46.03174603174603" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Al Capone gangster at entrance: entacapone (a peripheral COMT inhibitor) increases the bioavailability of levodopa</div>
+</div>
+
+<div class="hotspot" style="top: 40%; left: 61.6071%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1462773832967" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="61.60714285714286" data-hotspot-y="40" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">InTerCOM guard in vault: catechol-O-methyltransferase (COMT) converts dopamine to 3-methoxytyramine (3-MT) in the CNS</div>
+</div>
+
+<div class="hotspot" style="top: 48.0952%; left: 53.9286%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1462773856335" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="53.92857142857142" data-hotspot-y="48.095238095238095" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Tall gangster in vault: tolcapone (a peripheral and central COMT inhibitor) increases dopamine levels in CNS</div>
+</div>
+
+<div class="hotspot" style="top: 56.9841%; left: 58.8393%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1462773863585" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="58.839285714285715" data-hotspot-y="56.98412698412698" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Hepatic gun: tolcapone can cause hepatic failure</div>
+</div>
+
+<div class="hotspot" style="top: 4.92063%; left: 93.8393%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1462773879728" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="93.83928571428571" data-hotspot-y="4.920634920634921" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Black mouse eating rope: monoamine oxidase B (MAO-B) selectively metabolizes dopamine</div>
+</div>
+
+<div class="hotspot" style="top: 6.50794%; left: 89.0179%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1462773893509" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="89.01785714285714" data-hotspot-y="6.507936507936509" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Sledge hammer: selegiline (a selective MAO-B inhibitor) increases dopamine levels in the CNS</div>
+</div>
+
+<div class="hotspot" style="top: 41.9048%; left: 88.3036%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1462773905588" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="88.30357142857143" data-hotspot-y="41.904761904761905" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Rope in a roll: ropinirole (D2 dopamine receptor agonists) is an important initial treatment of Parkinson’s</div>
+</div>
+
+<div class="hotspot" style="top: 32.6984%; left: 87.0536%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1462773916252" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="87.05357142857143" data-hotspot-y="32.698412698412696" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Double rope ladder: D2 dopamine receptor</div>
+</div>
+
+<div class="hotspot" style="top: 53.8095%; left: 89.5536%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1462773928891" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="89.55357142857143" data-hotspot-y="53.80952380952381" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Big pecs: pramipexole (D3 dopamine receptor agonist) is an important initial treatment of Parkinson’s</div>
+</div>
+
+<div class="hotspot" style="top: 21.746%; left: 80.5357%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1462773943190" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="80.53571428571429" data-hotspot-y="21.746031746031747" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Restless legs: dopamine receptor agonists (e.g. ropinirole, pramipexole) treat restless leg syndrome (RLS)</div>
+</div>
+
+<div class="hotspot" style="top: 20.6349%; left: 86.25%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1462773962697" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="86.25" data-hotspot-y="20.634920634920633" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">“Rock and roll”: dopamine receptor agonists (e.g. ropinirole) may enhance impulse control disorders (e.g. gambling, shopping, hypersexuality)</div>
+</div>
+
+<div class="hotspot" style="top: 79.6825%; left: 81.5179%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1462773974457" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="81.51785714285714" data-hotspot-y="79.68253968253968" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Manatee: amantadine can treat some motor symptoms of Parkinson’s</div>
+</div>
+
+<div class="hotspot" style="top: 82.5397%; left: 86.5179%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1462773989215" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="86.51785714285715" data-hotspot-y="82.53968253968253" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Breaking open rope: amantadine enhances the effect of endogenous dopamine (by increasing its synthesis/release and inhibiting its uptake)</div>
+</div>
+
+<div class="hotspot" style="top: 35.5556%; left: 27.1429%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1462774003928" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="27.142857142857142" data-hotspot-y="35.55555555555556" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Tri-hex Benz car: trihexyphenidyl and benztropine (antimuscarinic agents used to treat parkinsonism)</div>
+</div>
+
+<div class="hotspot" style="top: 30.9524%; left: 22.1429%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1462774017822" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="22.142857142857142" data-hotspot-y="30.952380952380953" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Trembling getaway car: trihexyphenidyl and benztropine (antimuscarinic agents) improve the tremor and rigidity of Parkinson’s with no effect on bradykinesia</div>
+</div>
+
+</div>
+</div>
+
+  </div>
+</div>
+</main>
+
+      <footer id="footer">
+
+</footer>
+
+<div class="modal fade contact-modal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+        <h4 class="modal-title" id="contactModalLabel">Contact Us</h4>
+      </div>
+      <div class="modal-body">
+        <p class="text-muted">Use the form below to contact us. We will try to get back to you as soon as possible!</p>
+        <form id="contact_form">
+          <div class="form-group">
+            <label>Name</label>
+            <input type="text" name="name" placeholder="Name" class="form-control input-lg">
+          </div>
+
+          <div class="form-group">
+            <label>E-mail Address</label>
+            <input type="text" name="email" placeholder="E-mail address" class="form-control input-lg">
+          </div>
+
+          <div class="form-group">
+            <label>Subject</label>
+            <input type="text" name="subject" placeholder="Subject" class="form-control input-lg">
+          </div>
+
+          <div class="form-group">
+            <label>Message</label>
+            <textarea name="message" class="form-control" rows="6"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer text-center">
+        <a href="https://www.sketchymedical.com/sections/b03d47da-93d2-4c71-8c82-9a0fbd971c81/hotspot#" class="btn btn-signup cta" id="contact_form_submit">Submit</a>
+        <!--<a href="#" class="btn btn-signup cta">Login</a>-->
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade contact-success-modal" tabindex="-1" role="dialog" aria-labelledby="contactSuccessModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+      </div>
+      <div class="modal-body">
+        Message successfully sent!
+      </div>
+      <div class="modal-footer text-center">
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+    <script type="text/javascript" async="" src="./levodopa-carbidopa-entacapone-tolcapone-selegiline-ropinirole-pramipexole-amantadine_files/analytics.js.download"></script><script async="" src="./levodopa-carbidopa-entacapone-tolcapone-selegiline-ropinirole-pramipexole-amantadine_files/gtm.js.download"></script><script src="./levodopa-carbidopa-entacapone-tolcapone-selegiline-ropinirole-pramipexole-amantadine_files/application-99dbe923029ab824ecde941c5a23ad1e.js.download"></script>
+
+<script type="text/javascript" src="./levodopa-carbidopa-entacapone-tolcapone-selegiline-ropinirole-pramipexole-amantadine_files/saved_resource"></script>
+<script type="text/javascript">
+  Stripe.setPublishableKey("pk_live_pIsHXdJBqpwMc739H16zbOyv");
+</script>
+
+<noscript>
+  &lt;iframe src="//www.googletagmanager.com/ns.html?id=GTM-P3BMBC" height="0" width="0" style="display:none;visibility:hidden"&gt;&lt;/iframe&gt;
+</noscript>
+<script>
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-P3BMBC');
+</script>
+<script src="./levodopa-carbidopa-entacapone-tolcapone-selegiline-ropinirole-pramipexole-amantadine_files/slick.min.js.download"></script>
+
+  
+
+<iframe name="stripeXDM_default655279_provider" id="stripeXDM_default655279_provider" src="./levodopa-carbidopa-entacapone-tolcapone-selegiline-ropinirole-pramipexole-amantadine_files/channel.html" frameborder="0" style="position: absolute; top: -2000px; left: 0px;"></iframe></body></html>

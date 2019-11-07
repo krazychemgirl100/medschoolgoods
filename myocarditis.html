@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<!-- saved from url=(0084)https://www.sketchymedical.com/sections/d40f8c2f-9e87-4977-bab5-141d0270148f/hotspot -->
+<html lang="en"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<!-- <meta http-equiv="X-UA-Compatible" content="IE=7" />
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"f34a1877e4","applicationID":"9022742","transactionName":"IVwPQBRXDVtRRBkQBAFHCFsIS05fW0JFEw4W","queueTime":4,"applicationTime":110,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1026.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script> -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  Myocarditis
+</title>
+<meta name="description" content="Unknown Meta Description">
+<meta name="keywords" content="Unknown Meta Keywords">
+<meta name="author" content="Unknown Meta Author">
+<meta property="og:title" content="Unknown Meta OG Title">
+<meta property="og:url" content="Unknown Meta OG URL">
+<meta property="og:image" content="Unknown Meta OG Cover">
+<meta property="og:description" content="Unknown Meta OG Description">
+
+<link rel="icon" href="https://duhufzmjzul3w.cloudfront.net/assets/sketchyfav-79dfb11108ec1891e945b13307a75952.png" type="image/png">
+
+    <meta name="media" content="Ly9kdWh1Znptanp1bDN3LmNsb3VkZnJvbnQubmV0L3VwbG9hZHMvc2VjdGlvbnMvZDQwZjhjMmYtOWU4Ny00OTc3LWJhYjUtMTQxZDAyNzAxNDhmL3ZpZGVvLw==">
+  <meta name="caption" content="">
+<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="yuThEZ10m0t0n0Z/AEzG9Q76RDEE32OBVtcOKx2+avPGIDMPzWuY/D/mDMtBvrFIM4+C8z25p6uRiy46eIcMRg==">
+
+<link rel="stylesheet" media="screen" href="./myocarditis_files/font-awesome.min.css">
+<link rel="stylesheet" media="screen" href="./myocarditis_files/css">
+<link rel="stylesheet" media="screen" href="./myocarditis_files/slick.css">
+<link rel="stylesheet" media="screen" href="./myocarditis_files/application-bf44aafbe6c8a39ea2fc2fc30faf0325.css">
+
+
+  </head>
+  <body class="sections hotspot ">
+
+    <main class="container">
+
+
+  <div class="row">
+  <div class="col-md-12">
+    <div class="litetooltip-hotspot-wrapper" style="max-width: 1120px">
+<div class="litetooltip-hotspot-container" style="padding-bottom: 56.25%">
+<img src="./myocarditis_files/128fefcd2ce223f5b12184b043970be7.png" data-width="1120" data-height="630">
+<div class="hotspot" style="top: 8.73016%; left: 20%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1490667477234" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="20" data-hotspot-y="8.73015873015873" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Flaming heart: myocarditis (inflammatory damage to the myocardium caused by infection, toxin exposure, or hypersensitivity reaction)</div>
+</div>
+
+<div class="hotspot" style="top: 28.0952%; left: 14.1964%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1490667487055" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="14.196428571428571" data-hotspot-y="28.095238095238095" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Cockatoo: infection with coxsackievirus B (an enterovirus) can cause myocarditis</div>
+</div>
+
+<div class="hotspot" style="top: 39.8413%; left: 13.4821%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1490667495251" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="13.482142857142856" data-hotspot-y="39.84126984126984" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Viral beer tap handle: viral infection (e.g. enterovirus, adenovirus, HIV, parvovirus, HHV 6) can cause myocarditis</div>
+</div>
+
+<div class="hotspot" style="top: 55.2381%; left: 18.2143%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1490667503886" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="18.21428571428571" data-hotspot-y="55.23809523809524" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Scattered blue bird seed: viral myocarditis shows an inflammatory infiltrate in the myocardium on histology</div>
+</div>
+
+<div class="hotspot" style="top: 60.1587%; left: 12.9464%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1490667512818" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="12.946428571428573" data-hotspot-y="60.15873015873016" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Spilled antibody toothpicks: viral damage to myocytes causes the release of cross-reactive antigens → autoantibodies target heart tissue</div>
+</div>
+
+<div class="hotspot" style="top: 31.2698%; left: 6.25%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1490667520536" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="6.25" data-hotspot-y="31.26984126984127" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Dilated heart sack: myocarditis can lead to dilated cardiomyopathy</div>
+</div>
+
+<div class="hotspot" style="top: 8.57143%; left: 2.32143%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1490667529862" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="2.3214285714285716" data-hotspot-y="8.571428571428571" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Failing heart balloon: myocarditis can lead to systolic heart failure</div>
+</div>
+
+<div class="hotspot" style="top: 47.3016%; left: 2.94643%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1490667541045" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="2.946428571428571" data-hotspot-y="47.3015873015873" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Blowing nose: viral myocarditis may be preceded by flu-like symptoms (~1 week prior)</div>
+</div>
+
+<div class="hotspot" style="top: 25.7143%; left: 25.1786%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1490667549720" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="25.178571428571427" data-hotspot-y="25.71428571428571" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Che’s gas: Chaga’s disease (infection with the protozoan Trypanosoma cruzi) may include myocardial involvement → myocarditis and dilated cardiomyopathy</div>
+</div>
+
+<div class="hotspot" style="top: 53.8095%; left: 26.7857%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1490667571590" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="26.785714285714285" data-hotspot-y="53.80952380952381" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Protozoal bar nuts: Trypanosoma cruzi infection of the myocardium shows dense collections of protozoa on histology</div>
+</div>
+
+<div class="hotspot" style="top: 35.5556%; left: 34.7321%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1490667591896" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="34.732142857142854" data-hotspot-y="35.55555555555556" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Bacterial beer tap handle: bacterial infection (e.g. Borrelia, Rickettsia, Mycoplasma)  can cause myocarditis</div>
+</div>
+
+<div class="hotspot" style="top: 14.4444%; left: 40.8036%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1490667605408" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="40.80357142857143" data-hotspot-y="14.444444444444443" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">“Robin of Ixodes”: Lyme disease (infection with the bacterium Borrelia burgdorferi) can include myocarditis</div>
+</div>
+
+<div class="hotspot" style="top: 20.4762%; left: 36.0714%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1490667613306" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="36.07142857142857" data-hotspot-y="20.476190476190474" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Heart shield: myocardial involvement in Lyme disease can manifest as heart block</div>
+</div>
+
+<div class="hotspot" style="top: 36.3492%; left: 41.7857%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1490667706266" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="41.785714285714285" data-hotspot-y="36.34920634920635" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Fungus beer tap handle: fungal infection (e.g. Candida, Mucor, Aspergillus) can cause myocarditis</div>
+</div>
+
+<div class="hotspot" style="top: 76.8254%; left: 34.9107%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1490667717878" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="34.910714285714285" data-hotspot-y="76.82539682539684" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Immunocompromised cane: fungal myocarditis is more common in immunocompromised</div>
+</div>
+
+<div class="hotspot" style="top: 37.619%; left: 52.4107%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1490667736023" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="52.41071428571429" data-hotspot-y="37.61904761904762" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Toxin beer tap handle: toxins exposure (e.g. alcohol, carbon monoxide, cocaine, diuretics, antibiotics) can cause myocarditis</div>
+</div>
+
+<div class="hotspot" style="top: 53.6508%; left: 58.75%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1490667744135" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="58.75" data-hotspot-y="53.65079365079365" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Chips and dip: Corynebacterium diphtheriae toxin can cause myocarditis</div>
+</div>
+
+<div class="hotspot" style="top: 35.2381%; left: 60.2679%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1490667752022" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="60.26785714285714" data-hotspot-y="35.23809523809524" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Box of rubies: anthracyclines (e.g. doxorubicin, daunorubicin) can cause free radical damage and myocarditis</div>
+</div>
+
+<div class="hotspot" style="top: 30.6349%; left: 62.6786%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1490667772632" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="62.67857142857143" data-hotspot-y="30.634920634920636" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Helper white squires: certain drugs can elicit a delayed type IV hypersensitivity reaction (helper T cell mediated) → hypersensitivity myocarditis</div>
+</div>
+
+<div class="hotspot" style="top: 58.5714%; left: 75.2679%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1490667783544" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="75.26785714285714" data-hotspot-y="58.57142857142858" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Mortar and pestle: drugs that cause hypersensitivity myocarditis include sulfa drugs, furosemide, HCTZ, ampicillin, azithromycin, and zidovudine</div>
+</div>
+
+<div class="hotspot" style="top: 50.7937%; left: 70.0893%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1490667792860" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="70.08928571428571" data-hotspot-y="50.79365079365079" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Blue and pink shot glasses: hypersensitivity myocarditis manifests histologically with lymphocytic and eosinophilic interstitial inflammatory infiltrates</div>
+</div>
+
+<div class="hotspot" style="top: 13.9683%; left: 80.4464%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1490667804359" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="80.44642857142857" data-hotspot-y="13.968253968253968" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Antibody darts: autoimmune diseases (e.g. SLE, scleroderma, and RA) can cause myocarditis</div>
+</div>
+
+<div class="hotspot" style="top: 48.5714%; left: 85.4464%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1490667813594" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="85.44642857142857" data-hotspot-y="48.57142857142857" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Rhubarb pie: acute rheumatic fever is associated with myocarditis (~2-4 weeks after Strep pyogenes pharyngitis via molecular mimicry)</div>
+</div>
+
+<div class="hotspot" style="top: 43.3333%; left: 96.25%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1490667825137" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="96.25" data-hotspot-y="43.333333333333336" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Hot dyspneic dart thrower : myocarditis often presents with constitutional symptoms such as fever, malaise, and dyspnea</div>
+</div>
+
+<div class="hotspot" style="top: 35.5556%; left: 91.6071%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1490667834531" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="91.60714285714285" data-hotspot-y="35.55555555555556" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Dart in chest: myocarditis can produce a precordial chest pain that can mimic MI</div>
+</div>
+
+<div class="hotspot" style="top: 80.3175%; left: 8.125%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1490667843397" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="8.125" data-hotspot-y="80.31746031746032" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Bucket of Chicken and T-bone: inflammation and myocardial damage from myocarditis can cause the release of troponins and CK MB</div>
+</div>
+
+<div class="hotspot" style="top: 87.4603%; left: 58.4821%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1490667854444" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="58.48214285714286" data-hotspot-y="87.46031746031746" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Passed out with vibrating heart: abnormal cardiac conduction from inflammation in myocarditis can lead to fatal arrhythmia and sudden cardiac death</div>
+</div>
+
+</div>
+</div>
+
+
+  </div>
+</div>
+</main>
+
+      <footer id="footer">
+
+</footer>
+
+<div class="modal fade contact-modal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+        <h4 class="modal-title" id="contactModalLabel">Contact Us</h4>
+      </div>
+      <div class="modal-body">
+        <p class="text-muted">Use the form below to contact us. We will try to get back to you as soon as possible!</p>
+        <form id="contact_form">
+          <div class="form-group">
+            <label>Name</label>
+            <input type="text" name="name" placeholder="Name" class="form-control input-lg">
+          </div>
+
+          <div class="form-group">
+            <label>E-mail Address</label>
+            <input type="text" name="email" placeholder="E-mail address" class="form-control input-lg">
+          </div>
+
+          <div class="form-group">
+            <label>Subject</label>
+            <input type="text" name="subject" placeholder="Subject" class="form-control input-lg">
+          </div>
+
+          <div class="form-group">
+            <label>Message</label>
+            <textarea name="message" class="form-control" rows="6"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer text-center">
+        <a href="https://www.sketchymedical.com/sections/d40f8c2f-9e87-4977-bab5-141d0270148f/hotspot#" class="btn btn-signup cta" id="contact_form_submit">Submit</a>
+        <!--<a href="#" class="btn btn-signup cta">Login</a>-->
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade contact-success-modal" tabindex="-1" role="dialog" aria-labelledby="contactSuccessModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+      </div>
+      <div class="modal-body">
+        Message successfully sent!
+      </div>
+      <div class="modal-footer text-center">
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+    <script type="text/javascript" async="" src="./myocarditis_files/analytics.js.download"></script><script async="" src="./myocarditis_files/gtm.js.download"></script><script src="./myocarditis_files/application-99cd8366e1ad296e78f7d8512c1901ee.js.download"></script>
+
+<script type="text/javascript" src="./myocarditis_files/saved_resource"></script>
+<script type="text/javascript">
+  Stripe.setPublishableKey("pk_live_pIsHXdJBqpwMc739H16zbOyv");
+</script>
+
+<noscript>
+  &lt;iframe src="//www.googletagmanager.com/ns.html?id=GTM-P3BMBC" height="0" width="0" style="display:none;visibility:hidden"&gt;&lt;/iframe&gt;
+</noscript>
+<script>
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-P3BMBC');
+</script>
+<script src="./myocarditis_files/slick.min.js.download"></script>
+
+  
+
+<iframe name="stripeXDM_default868248_provider" id="stripeXDM_default868248_provider" src="./myocarditis_files/channel.html" frameborder="0" style="position: absolute; top: -2000px; left: 0px;"></iframe></body></html>

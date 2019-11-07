@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<!-- saved from url=(0084)https://www.sketchymedical.com/sections/cf5d89f5-b439-42d2-b519-2accc49b298a/hotspot -->
+<html lang="en"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<!-- <meta http-equiv="X-UA-Compatible" content="IE=7" />
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"f34a1877e4","applicationID":"9022742","transactionName":"IVwPQBRXDVtRRBkQBAFHCFsIS05fW0JFEw4W","queueTime":5,"applicationTime":98,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[(new Date).getTime()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(s,function(e,t){f[t]=o(l+t,!0,"api")}),f.addPageAction=o(l+"addPageAction",!0),f.setCurrentRouteName=o(l+"routeName",!0),t.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(p+"tracer",[Date.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return t.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){d[t]=o(p+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o){if(!p.aborted){e&&e(n,r,o);for(var i=t(o),a=v(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var f=s[w[n]];return f&&f.push([y,n,r,i]),i}}function d(e,t){b[e]=v(e).concat(t)}function v(e){return b[e]||[]}function g(e){return l[e]=l[e]||o(n)}function m(e,t){f(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var b={},w={},y={on:d,emit:n,get:g,listeners:v,context:t,buffer:m,abort:a,aborted:!1};return y}function i(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},l={},p=t.exports=o();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!h++){var e=y.info=NREUM.info,t=l.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return f.abort();c(b,function(t,n){e[t]||(e[t]=n)}),u("mark",["onload",a()],null,"api");var n=l.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===l.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=e("ee"),s=window,l=s.document,p="addEventListener",d="attachEvent",v=s.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:v,REQ:s.Request,EV:s.Event,PR:s.Promise,MO:s.MutationObserver},e(1);var m=""+location,b={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1016.min.js"},w=v&&g&&g[p]&&!/CriOS/.test(navigator.userAgent),y=t.exports={offset:a(),origin:m,features:{},xhrWrappable:w};l[p]?(l[p]("DOMContentLoaded",i,!1),s[p]("load",r,!1)):(l[d]("onreadystatechange",o),s[d]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script> -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  Opiates, naloxone, naltrexone
+</title>
+<meta name="description" content="Unknown Meta Description">
+<meta name="keywords" content="Unknown Meta Keywords">
+<meta name="author" content="Unknown Meta Author">
+<meta property="og:title" content="Unknown Meta OG Title">
+<meta property="og:url" content="Unknown Meta OG URL">
+<meta property="og:image" content="Unknown Meta OG Cover">
+<meta property="og:description" content="Unknown Meta OG Description">
+
+<link rel="icon" href="https://duhufzmjzul3w.cloudfront.net/assets/sketchyfav-79dfb11108ec1891e945b13307a75952.png" type="image/png">
+
+    <meta name="media" content="Ly9kdWh1Znptanp1bDN3LmNsb3VkZnJvbnQubmV0L3VwbG9hZHMvc2VjdGlvbnMvY2Y1ZDg5ZjUtYjQzOS00MmQyLWI1MTktMmFjY2M0OWIyOThhL3ZpZGVvLw==">
+  <meta name="caption" content="">
+<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="wgEJXbilexuToAemqBmFG5WdYRBQgf/J3G9F+u5CkN5VLK4/+KHiJrkbUg7lmIImF/hl15UbRSIkMqWekpcnKw==">
+
+<link rel="stylesheet" media="screen" href="./opiates-naloxone-naltrexone_files/font-awesome.min.css">
+<link rel="stylesheet" media="screen" href="./opiates-naloxone-naltrexone_files/css">
+<link rel="stylesheet" media="screen" href="./opiates-naloxone-naltrexone_files/slick.css">
+<link rel="stylesheet" media="screen" href="./opiates-naloxone-naltrexone_files/application-ff1b8e68bf3c58b9bbc8021b428b3bc8.css">
+
+
+  </head>
+  <body class="sections hotspot ">
+
+    <main class="container">
+
+
+  <div class="row">
+  <div class="col-md-12">
+    <div class="litetooltip-hotspot-wrapper" style="max-width: 1120px">
+<div class="litetooltip-hotspot-container" style="padding-bottom: 56.25%">
+<img src="./opiates-naloxone-naltrexone_files/97a9636a4b3614ec2c74faeca20912e3.png" data-width="1120" data-height="630">
+<div class="hotspot" style="top: 9.84127%; left: 76.1607%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1462081901555" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="76.16071428571428" data-hotspot-y="9.841269841269842" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Utopia: opiates</div>
+</div>
+
+<div class="hotspot" style="top: 25.5556%; left: 78.0357%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1462081930406" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="78.03571428571429" data-hotspot-y="25.555555555555554" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">μssage: μ-opioid receptor (mediates most clinical and adverse effects: e.g. analgesia, sedation, constipation, respiratory depression)</div>
+</div>
+
+<div class="hotspot" style="top: 47%; left: 80%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1462081930406" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="78.03571428571429" data-hotspot-y="25.555555555555554" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Pain-relieving acupuncture: μ-opioid receptor mediates analgesia</div>
+</div>
+
+<div class="hotspot" style="top: 29.3651%; left: 31.6071%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1462081953710" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="31.607142857142854" data-hotspot-y="29.365079365079367" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Open banana barrels: opiate receptors open K+ channels</div>
+</div>
+
+<div class="hotspot" style="top: 28.254%; left: 24.9107%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1462081969478" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="24.910714285714285" data-hotspot-y="28.253968253968253" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Closed Calci-Yum ice cream cooler: opiate receptors close VG Ca2+ channels</div>
+</div>
+
+<div class="hotspot" style="top: 30.9524%; left: 36.875%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1462081985877" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="36.875" data-hotspot-y="30.952380952380953" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Disconnected presynaptic wire: closure of presynaptic VG Ca2+ channels prevents release of neurotransmitters (e.g. glutamate, acetylcholine, norepinephrine, serotonin, substance P)</div>
+</div>
+
+<div class="hotspot" style="top: 57.3016%; left: 77.2321%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1462082006416" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="77.23214285714286" data-hotspot-y="57.3015873015873" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">“Fantasy”: fentanyl (opioid analgesic)</div>
+</div>
+
+<div class="hotspot" style="top: 57.9365%; left: 70.2679%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1462082030642" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="70.26785714285714" data-hotspot-y="57.936507936507944" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">“More fun”: morphine (opioid analgesic)</div>
+</div>
+
+<div class="hotspot" style="top: 9.20635%; left: 41.0714%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1462082045144" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="41.07142857142857" data-hotspot-y="9.206349206349207" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Distant tram: tramadol (a weak μ-opioid receptor agonist used to manage chronic pain)</div>
+</div>
+
+<div class="hotspot" style="top: 9.52381%; left: 47.0536%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1462082058002" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="47.05357142857143" data-hotspot-y="9.523809523809524" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">North-South: tramadol also inhibits reuptake of norepinephrine and serotonin</div>
+</div>
+
+<div class="hotspot" style="top: 68.4127%; left: 89.4643%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1462082080992" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="89.46428571428572" data-hotspot-y="68.41269841269842" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Colon μssage table: μ-opioid receptors are located in the GI tract (delay stool transit)</div>
+</div>
+
+<div class="hotspot" style="top: 70.6349%; left: 69.4643%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1462082095645" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="69.46428571428571" data-hotspot-y="70.63492063492063" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Removed muddy slippers: opioids (e.g. loperamide, diphenoxylate) can be used as antidiarrheals</div>
+</div>
+
+<div class="hotspot" style="top: 63.6508%; left: 81.25%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1462082110250" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="81.25" data-hotspot-y="63.650793650793645" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Lop-eared rabbit: loperamide (opioid antidiarrheal)</div>
+</div>
+
+<div class="hotspot" style="top: 65.2381%; left: 77.9464%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1462082127861" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="77.94642857142857" data-hotspot-y="65.23809523809524" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Loping back and forth: loperamide increases colonic phasic segmentation (increase stool transit time)</div>
+</div>
+
+<div class="hotspot" style="top: 56.3492%; left: 89.9107%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1462082143524" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="89.91071428571429" data-hotspot-y="56.34920634920635" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Dolphins: diphenoxylate (opioid antidiarrheal)</div>
+</div>
+
+<div class="hotspot" style="top: 63.8095%; left: 96.6964%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1462082171534" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="96.69642857142857" data-hotspot-y="63.8095238095238" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Barcode: codeine (opioid antitussive)</div>
+</div>
+
+<div class="hotspot" style="top: 49.5238%; left: 97.4107%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1462082190658" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="97.41071428571428" data-hotspot-y="49.523809523809526" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Orphan: dextromethorphan (opioid antitussive)</div>
+</div>
+
+<div class="hotspot" style="top: 59.3651%; left: 94.6429%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1462082205692" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="94.64285714285714" data-hotspot-y="59.36507936507937" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Tethered nomadic camel: dextromethorphan antagonizes NMDA receptors</div>
+</div>
+
+<div class="hotspot" style="top: 67.7778%; left: 65%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1462082225631" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="65" data-hotspot-y="67.77777777777779" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Cerebral towel: opiates cause CNS depression (e.g. sedation)</div>
+</div>
+
+<div class="hotspot" style="top: 86.5079%; left: 51.3393%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1462082241220" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="51.33928571428571" data-hotspot-y="86.5079365079365" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Deflated lung vest: opiates can cause respiratory depression</div>
+</div>
+
+<div class="hotspot" style="top: 37.3016%; left: 62.4107%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1462082273353" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="62.410714285714285" data-hotspot-y="37.301587301587304" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Constricted hood: opiates cause miosis (constricted pupils)</div>
+</div>
+
+<div class="hotspot" style="top: 46.0317%; left: 62.0536%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1462082284558" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="62.05357142857143" data-hotspot-y="46.03174603174603" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Plunger: opiates can cause constipation</div>
+</div>
+
+<div class="hotspot" style="top: 28.7302%; left: 44.6429%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1462082306552" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="44.642857142857146" data-hotspot-y="28.730158730158728" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Biliary tree: opiates can cause biliary colic (contract biliary smooth muscle)</div>
+</div>
+
+<div class="hotspot" style="top: 31.4286%; left: 54.2857%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1462082334713" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="54.285714285714285" data-hotspot-y="31.428571428571427" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">"All are welcome”: patients may develop tolerance to opiates</div>
+</div>
+
+<div class="hotspot" style="top: 40.1587%; left: 53.5714%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1462082359657" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="53.57142857142857" data-hotspot-y="40.15873015873016" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">“Out of order”: tolerance does not develop for miosis or constipation</div>
+</div>
+
+<div class="hotspot" style="top: 55.5556%; left: 56.0714%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1462082378223" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="56.07142857142857" data-hotspot-y="55.55555555555556" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Causing pain: opiate induced hyperalgesia can occur with chronic use</div>
+</div>
+
+<div class="hotspot" style="top: 52.6984%; left: 5.26786%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1462082394513" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="5.267857142857143" data-hotspot-y="52.6984126984127" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Anxious, hot, and moist: opioid withdrawal (rhinorrhea, lacrimation, yawning, hyperventilation, hyperthermia, muscle aches, vomiting, diarrhea, anxiety)</div>
+</div>
+
+<div class="hotspot" style="top: 70.9524%; left: 29.1964%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1462082413974" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="29.196428571428573" data-hotspot-y="70.95238095238095" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">DONE timer: methadone (long acting opioid used to attenuate withdrawal symptoms)</div>
+</div>
+
+<div class="hotspot" style="top: 43.0159%; left: 38.3036%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1462082439958" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="38.30357142857143" data-hotspot-y="43.01587301587302" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Long tapering flag: methadone and buprenorphine have a long half lives (used in opioid detoxification)</div>
+</div>
+
+<div class="hotspot" style="top: 62.8571%; left: 37.0536%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1462082445847" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="37.05357142857143" data-hotspot-y="62.857142857142854" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Blueprint: buprenorphine (long acting partial μ-opioid agonist used to attenuate withdrawal symptoms)</div>
+</div>
+
+<div class="hotspot" style="top: 61.4286%; left: 20.0893%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1462082483005" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="20.089285714285715" data-hotspot-y="61.42857142857143" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Irritable, moist, tachypneic baby: neonatal abstinence syndrome (diarrhea, sweating, sneezing, crying, tachypnea, irritability)</div>
+</div>
+
+<div class="hotspot" style="top: 42.6984%; left: 22.6786%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1462082499484" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="22.678571428571427" data-hotspot-y="42.698412698412696" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Partial μssage: partial μ-opioid agonists (e.g. buprenorphine, nalbuphine, butorphanol)</div>
+</div>
+
+<div class="hotspot" style="top: 9.20635%; left: 5.89286%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1462082517954" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="5.892857142857142" data-hotspot-y="9.206349206349207" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Bluefin: “bu-phin” in names of partial μ-opioid agonists (e.g. buprenorphine, nalbuphine, butorphanol)</div>
+</div>
+
+<div class="hotspot" style="top: 34.2857%; left: 17.8571%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1462082530535" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="17.857142857142858" data-hotspot-y="34.285714285714285" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Falling into the withdraw spa: partial μ-opioid agonists can induce withdrawals</div>
+</div>
+
+<div class="hotspot" style="top: 77.4603%; left: 38.75%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1462082549359" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="38.75" data-hotspot-y="77.46031746031747" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">No lax zone: naloxone (μ-opioid antagonist) used to reverse acute opioid toxicity (can precipitate withdrawals)</div>
+</div>
+
+<div class="hotspot" style="top: 78.8889%; left: 4.91071%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1462082571557" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="4.910714285714286" data-hotspot-y="78.88888888888889" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">No tricks zone: naltrexone (μ-opioid antagonist) helps maintain abstinence in heroin addicts</div>
+</div>
+
+<div class="hotspot" style="top: 80%; left: 13.75%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1462082579592" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="13.750000000000002" data-hotspot-y="80" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Tempting alcohol: naltrexone (μ-opioid antagonist) helps reduce cravings for alcohol and nicotine</div>
+</div>
+
+<div class="hotspot" style="top: 93.0159%; left: 24.0179%; width: 1.78571%; height: 3.1746%; background: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); border-radius: 20px; opacity: 0.8; cursor: pointer;" id="hotspot_1462082596546" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="24.017857142857142" data-hotspot-y="93.01587301587301" data-hotspot-blink="false" data-hotspot-bgcolor="#cc0000" data-hotspot-bordercolor="#cc0000" data-hotspot-borderradius="20">
+<div class="data-container">Getting fit: naltrexone (μ-opioid antagonist) can help with weight loss</div>
+</div>
+
+</div>
+</div>
+
+  </div>
+</div>
+</main>
+
+      <footer id="footer">
+
+</footer>
+
+<div class="modal fade contact-modal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+        <h4 class="modal-title" id="contactModalLabel">Contact Us</h4>
+      </div>
+      <div class="modal-body">
+        <p class="text-muted">Use the form below to contact us. We will try to get back to you as soon as possible!</p>
+        <form id="contact_form">
+          <div class="form-group">
+            <label>Name</label>
+            <input type="text" name="name" placeholder="Name" class="form-control input-lg">
+          </div>
+
+          <div class="form-group">
+            <label>E-mail Address</label>
+            <input type="text" name="email" placeholder="E-mail address" class="form-control input-lg">
+          </div>
+
+          <div class="form-group">
+            <label>Subject</label>
+            <input type="text" name="subject" placeholder="Subject" class="form-control input-lg">
+          </div>
+
+          <div class="form-group">
+            <label>Message</label>
+            <textarea name="message" class="form-control" rows="6"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer text-center">
+        <a href="https://www.sketchymedical.com/sections/cf5d89f5-b439-42d2-b519-2accc49b298a/hotspot#" class="btn btn-signup cta" id="contact_form_submit">Submit</a>
+        <!--<a href="#" class="btn btn-signup cta">Login</a>-->
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade contact-success-modal" tabindex="-1" role="dialog" aria-labelledby="contactSuccessModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+      </div>
+      <div class="modal-body">
+        Message successfully sent!
+      </div>
+      <div class="modal-footer text-center">
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+    <script type="text/javascript" async="" src="./opiates-naloxone-naltrexone_files/analytics.js.download"></script><script async="" src="./opiates-naloxone-naltrexone_files/gtm.js.download"></script><script src="./opiates-naloxone-naltrexone_files/application-99dbe923029ab824ecde941c5a23ad1e.js.download"></script>
+
+<script type="text/javascript" src="./opiates-naloxone-naltrexone_files/saved_resource"></script>
+<script type="text/javascript">
+  Stripe.setPublishableKey("pk_live_pIsHXdJBqpwMc739H16zbOyv");
+</script>
+
+<noscript>
+  &lt;iframe src="//www.googletagmanager.com/ns.html?id=GTM-P3BMBC" height="0" width="0" style="display:none;visibility:hidden"&gt;&lt;/iframe&gt;
+</noscript>
+<script>
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-P3BMBC');
+</script>
+<script src="./opiates-naloxone-naltrexone_files/slick.min.js.download"></script>
+
+  
+
+<iframe name="stripeXDM_default530429_provider" id="stripeXDM_default530429_provider" src="./opiates-naloxone-naltrexone_files/channel.html" frameborder="0" style="position: absolute; top: -2000px; left: 0px;"></iframe></body></html>
